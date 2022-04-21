@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .header{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            height: 116px;
+            width: 100%;
+            background-color: #170550;
+        }
+      
+
+    
+        .item{
+
+         
+            height: 201px;
+        }
+        a{
+            float: left;
+    margin-top: 57px;
+    margin-left: 102px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+        }
+        .active{
+            color: #00ffb6;
+        }
+        .text{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            height: 201px;
+            font-size: 8px;
+    width: 100%;
+        background-color: rgb(255, 255, 255);}
+        img{
+            width: 78px;
+    height: 70px;
+    margin: 67px 41px;
+}
+p{
+    font-size: 14px;
+    left: 56px;
+    top: -212px;
+    line-height: 24px;
+    position: relative;
+    
+    margin: 75px;
+}
+
+       
+        .banner{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            height: 660px;
+            width: 100%;
+            background-color: cadetblue;
+           
+        }
+        .hero-image {
+  background-image: url("photo-1604671801908-6f0c6a092c05.jpg");
+  height: 100%;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} 
+
+        .section{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            height: 660px;
+            width: 100%;
+            background-color: #170550;
+        }
+        h2{
+            position: absolute;
+    left: 562px;
+    /* top: 27px; */
+    font-family: cursive;
+    color: aqua;
+    /* bottom: 89px; */
+    letter-spacing: 3px;
+    font-size: 36px;
+}
+        
+      
+        .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  
+}
+.container .card {
+  position: relative;
+  width: 248px;
+    height: 361px;
+  /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5); */
+ 
+ 
+}
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container .card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+.image {
+    height: 221px;
+    width: 208px;
+    margin-top: -30px;
+   
+}
+.container .card .box .content h2 {
+  font-size: 1em;
+}
+.container .card:hover .box .content h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .card .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .card:hover .box .content p {
+  color: #fff;
+}
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.container .card:hover .box .content a {
+  background: #ff34af;
+}
+
+
+
+ 
+        /* .card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            margin: 100px 100px;
+            height: 267px;
+    width: 85%;
+           
+            background-color: rgb(2, 46, 48);
+        }  */
+        .slider{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            height: 786px;
+            width: 100%;
+            
+            background-color: rgb(255, 255, 255);
+        }
+        .about{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            height: 400px;
+            margin-top: 126px;
+    width: 99%;
+           
+            background-color: rgb(250, 252, 252);
+        }
+        .item1{
+         
+    height: 426px;
+    position: relative;
+    top: 225px;
+}
+.slider0 {
+  
+    height: 457px;
+    width: 400px;
+    left: 111px;
+    margin-top: -30px;
+}
+  
+.slider1 {
+  height: 547px;
+    width: 434px;
+    margin-top: -120px;
+}
+
+.slider-img{
+ 
+ 
+    height: 489px;
+    width: 331px;
+    position: relative;
+    left: 94px;
+    margin-top: -30px;
+}
+.slider-img-big{
+  
+ z-index: 99;
+    height: 577px;
+    width: 398px;
+    position: relative;
+    left: -15px;
+    margin-top: -30px;
+}
+.slider2 {
+  
+  height: 457px;
+  width: 400px;
+  left: -205px;
+  margin-top: -30px;
+}
+/* .btn{
+  background-color: #040c0a;
+  margin: 0;
+  padding: 0;
+} */
+
+.blog0{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+            height: 682px;
+            width: 100%;
+            background-color: #170550;
+        }
+        .sample {
+
+    
+    height: 358px;
+    position: relative;
+    top: 212px;
+    width: 359px;
+    left: 49px;
+    background-color: #fefefe;
+}
+.blog-img{
+  height: 239px;
+    width: 359px;
+    position: relative;
+    left: -41px;
+    margin-top: 0px;
+}
+
+.visit {
+       /* margin: -2px 2px; */
+       position: relative;
+    /* top: -45px; */
+    bottom: 74px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .visit a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #fff;
+    background: #5b03bb;
+    border-radius: 8px;
+    transition: 0.4s ease;
+  }
+  .visit a:hover {
+    background-color: rgb(0, 110, 255);
+    color: #fff;
+  }
+
+  .end{
+    background-color: #5b03bb;
+    display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            color: #fefefe;
+           width: 100%;
+           height: 150px;
+         
+  }
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            border: 2px solid rgb(248, 242, 242);
+           width: 100%;
+           height: 85px;
+         background-color: rgb(247, 252, 252);
+        }
+        h3{
+         
+          position: absolute;
+    left: 497px;
+    /* top: 27px; */
+    font-family: cursive;
+    color: #040c0a;
+    /* bottom: 89px; */
+    /* letter-spacing: -7px; */
+    font-size: 29px;
+        }
+        .logo{
+    top: -42px;
+    position: relative;
+    width: 93px;
+    height: 67px;
+    color: white;
+}
+
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="=logo">
+         <img  src="Group 37 (2).png" class="logo"alt="">
+        </div>
+        <div class="item"><a href="home.html" class="active">Home</a></div>
+        <div class="item"> <a href="#product" >Store</a></div>
+        <div class="item"><a href="#blog" >Blog</a></div>
+        <div class="item"><a href="contact.html" >Contacts</a></div>
+       </div>
+      
+  <div class="banner">
+    <div class="hero-image"></div>
+  </div>
+   
+
+
+  <div class="text">
+    <div class="item"> <img src="Vector.png" alt=""><P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sunt minima, aut saepe laudantium eius voluptates quia ration</P>
+         </div>
+    <div class="item"><img src="Group.png" alt="">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sunt minima, aut saepe laudantium eius voluptates quia ration</P></div>
+    <div class="item"><img src="icon-park-outline_high-heeled-shoes.png" alt="">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sunt minima, aut saepe laudantium eius voluptates quia ration</P></div>
+    
+   </div>
+   <div class="section" id="product">
+     <h2>PRODUCTS</h2>
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="photo-1520256862855-398228c41684.jpg" class="image" />
+              
+             
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="photo-1581101767113-1677fc2beaa8.jpg" class="image" />
+              
+             
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="photo-1465877783223-4eba513e27c6.jpg" class="image" />
+              
+             
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="box">
+              <div class="content">
+                <img src="shoes.jpg" class="image" />
+               
+               
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="slider">
+    
+    <div class="about">
+      <!-- <img class="btn" src="Group 17.png" class="image" /> -->
+        <div class="item1 slider0">
+          <img  class="slider-img"src="photo-1465877783223-4eba513e27c6.jpg" class="image" />
+        </div>
+      <div class="item1 slider1">
+        <img class="slider-img-big" src="photo-1520256862855-398228c41684.jpg" class="image" />
+      </div>
+      <div class="item1 slider2">
+        <img class="slider-img" src="photo-1581101767113-1677fc2beaa8.jpg" class="image" />
+      </div>
+    </div>
+   </div>
+   
+
+  <div class="blog0" id="blog">
+    <h2>BLOG</h2>
+    <div class="sample"><img class="blog-img" src="photo-1581101767113-1677fc2beaa8.jpg" class="image" />
+      <div class="visit">
+        <a href="#">Order Now</a>
+    </div></div>
+  <div class="sample"><img class="blog-img" src="photo-1520256862855-398228c41684.jpg" class="image" />
+    <div class="visit">
+      <a href="#">Order Now</a>
+  </div></div>
+  <div class="sample"><img class="blog-img" src="photo-1604671801908-6f0c6a092c05.jpg" class="image" />
+    <div class="visit">
+      <a href="#">Order Now</a>
+  </div></div>
+ </div>
+
+ <div class="end">
+  
+<h2>NEWSLETTER <input type="text"></h2>
+
+ 
+</div>
+
+
+  <div class="footer">
+    <h3>copyright@indoriyashrehstha</h3>
+   
+  </div>
+  
+
+  
+  <script>
+    var i = 0;
+    var images = [];
+    var time =3000;
+
+
+    images[0] ='code.jpg';
+    images[1] ='code2.jpg';
+    images[2] ='code3.jpg';
+
+
+
+    function next(){
+        if(i<images.length-1 ){
+            i++;
+        }else{
+            i=0;
+        }
+        
+        changeImg();
+    }
+    function prev(){
+        if(i==0){
+            i=images.length-1;
+        }else{
+            i--;
+        }
+        
+       
+        changeImg();
+    }
+
+
+
+    function changeImg(){
+       
+        document.slider.src = images[i];
+    
+        
+        console.log(i);
+
+    }   
+    setInterval("next()", time );
+        window.onload =changeImg;
+    
+
+</script>
+</body>
+</html>
